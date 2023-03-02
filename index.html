@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Today News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body class="bg-secondary-subtle">
+   <header>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg " style="background-color: #e3f2fd;" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Today <span class="text-primary">News</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                
+                
+              </li>
+              <li class="nav-item">
+               
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end  -->
+   </header>
+   <main class="container">
+    <section class="my-3">
+        <div id="news" class="d-flex justify-content-center align-items-center border border-primary ">
+       
+        </div>
+    </section>
+    <!-- team section  -->
+    <section class="m-2">
+      <div class="p-2 border border-3"">
+     <h5 class="font-weight-light text-center "> <span id="iteams"></span> Iteams Found</h5>
+      </div>
+    </section>
+    <!-- short by and btn section  -->
+    <section class="my-5">
+      <div class="d-flex justify-content-between align-items-center">
+       <div class="d-flex align-items-center" >
+        <span>
+          <h5 class="text-primary font-weight-light">Short By View</h5>
+        </span>
+        <!-- dropdown  -->
+        <div class="dropdown show p-2 ">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Default
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Date</a>
+            <a class="dropdown-item" href="#">Topic</a>
+            <a class="dropdown-item" href="#">Author</a>
+          </div>
+        </div>
+       </div>
+
+        <div>
+          <button type="button" class="btn btn-primary">Today's PicK</button>
+          <button type="button" class="mx-1 btn btn-outline-primary">Trending</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="d-flex justify-content-center">
+        <div id="card" class="card mb-5" style=max-width:100%;">
+           
+           </div>
+          </div>
+    </section>
+    <section>
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="NewsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div id="modal-body" class="modal-body">
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+    <!-- loader or spinner  -->
+    <section id="spinner" class="d-none">
+      <div style="height: 400px" class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </section>
+   </main>
+   <footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
