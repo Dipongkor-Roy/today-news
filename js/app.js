@@ -32,11 +32,14 @@ const loadDetails=(category_id)=>{
 
 }
 const cardLoad=details=>{
+  const getblog=document.getElementById('getBlog')
+  getblog.classList.add('d-none')
     console.log(details)
     const iteams=document.getElementById('iteams')
     
     iteams.innerText=details.length;
  const cardBody=document.getElementById('card')
+ cardBody.classList.remove('d-none')
 
  cardBody.textContent='';
  
@@ -113,7 +116,10 @@ const toggleLoader=isLoading=>{
   }
 }
 const loadBlog=()=>{
+  const cardBody=document.getElementById('card')
+  cardBody.classList.add('d-none')
  const getblog=document.getElementById('getBlog')
+ getblog.classList.remove('d-none')
  const createDiv=document.createElement('div')
  
  createDiv.innerHTML=`
