@@ -1,7 +1,9 @@
 const loadServer=()=>{
     fetch('https://openapi.programming-hero.com/api/news/categories')
     .then(res=>res.json())
-    .then(data=>displayServer(data.data.news_category));
+    .then(data=>displayServer(data.data.news_category))
+    .catch(error=>console.log(error));
+
 }
 const displayServer=datas=>{
     // console.log(datas)
@@ -26,6 +28,8 @@ const loadDetails=(category_id)=>{
     fetch(url)
     .then(res=>res.json())
     .then(data=>cardLoad(data.data))
+    .catch(error=>console.log(error));
+
 }
 const cardLoad=details=>{
     console.log(details)
@@ -75,6 +79,7 @@ const loadInternal=news_id=>{
   fetch(url)
   .then(res=>res.json())
   .then(data=>loadInternalDetails(data.data))
+  .catch(error=>console.log(error))
 }
 
 const loadInternalDetails=innerDetail=>{
