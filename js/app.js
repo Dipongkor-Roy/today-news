@@ -108,7 +108,7 @@ const toggleLoader=isLoading=>{
   }
 }
 const loadBlog=()=>{
- console.log('loading')
+ const getBlog=docuement.getElementById('blog')
 }
 
 loadServer();
