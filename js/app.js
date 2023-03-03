@@ -109,6 +109,16 @@ const toggleLoader=isLoading=>{
 }
 const loadBlog=()=>{
  const getblog=document.getElementById('getBlog')
+ const createDiv=documnet.createElement('div')
+ createDiv.innerHTML=`
+ <h3 class="my-1">Question:Var, Let, and Const  What's the Difference?</h3>
+ <p class="my-2">Here if we will declare a var variable or let variable, then it can be updated, but if we declare a const variable, it will not be updated in any case and will work fine with our function.</p>
+ <h3 class="my-1">Question:Difference between arrow and regular function?</h3>
+ <p class="my-2">Unlike regular functions, arrow functions do not allow duplicate parameters, whether in strict or non-strict mode. Duplicate parameters will cause a Syntax Error to be thrown. In this article, I have discussed some significant differences between regular functions and arrow functions in JavaScript.</p>
+ <h3 class="my-1">Question:Why we use template string ?</h3>
+ <p class="my-2">Template literals are sometimes informally called template strings, because they are used most commonly for string interpolation (to create strings by doing substitution of placeholders).</p>
+ 
+ `
 
 }
 
