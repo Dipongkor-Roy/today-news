@@ -72,7 +72,6 @@ const cardLoad=details=>{
   </div>
  `
  cardBody.appendChild(divCreate);
-   
     
  });
  toggleLoader(false);
