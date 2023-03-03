@@ -120,9 +120,7 @@ const loadBlog=()=>{
   cardBody.classList.add('d-none')
  const getblog=document.getElementById('getBlog')
  getblog.classList.remove('d-none')
- const createDiv=document.createElement('div')
- 
- createDiv.innerHTML=`
+ getblog.innerHTML=`
  <h3 class="my-1">Question: Var, Let, and Const  What's the Difference?</h3>
  <p class="my-2">Here if we will declare a var variable or let variable, then it can be updated, but if we declare a const variable, it will not be updated in any case and will work fine with our function.</p>
  <h3 class="my-1">Question: Difference between arrow and regular function?</h3>
@@ -131,8 +129,6 @@ const loadBlog=()=>{
  <p class="my-2">Template literals are sometimes informally called template strings, because they are used most commonly for string interpolation (to create strings by doing substitution of placeholders).</p>
  
  `
- getblog.appendChild(createDiv);
- 
 }
 
 loadServer();
