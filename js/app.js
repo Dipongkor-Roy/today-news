@@ -107,5 +107,8 @@ const toggleLoader=isLoading=>{
     loader.classList.add('d-none')
   }
 }
+const loadBlog=()=>{
+ console.log('loading')
+}
 
 loadServer();
