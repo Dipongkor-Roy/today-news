@@ -108,7 +108,8 @@ const toggleLoader=isLoading=>{
   }
 }
 const loadBlog=()=>{
- const getBlog=docuement.getElementById('blog')
+ const getblog=document.getElementById('getBlog')
+
 }
 
 loadServer();
